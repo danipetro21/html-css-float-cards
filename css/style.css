@@ -1,0 +1,87 @@
+/* importo google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@500&family=Fredoka:wght@500&display=swap');
+
+/* regole generali */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* regole del body */
+body{
+    background-color: rgb(229, 232, 235);
+    Font-family: 'Fredoka', sans-serif;
+}
+
+/* regole header */
+header{
+    text-align: center;
+    width: auto;
+    height: 130px;
+
+    /* debug */
+
+}
+/* stile del titolo */
+header h1{
+
+   font-size: 45px;
+   color: rgb(249, 38, 38);
+   padding-top: 30px;
+}
+
+/* stile del main */
+
+main{
+    margin: 0 auto;
+    width: 70%;
+    height: 500px;
+    text-align: center;
+    /* debug */
+
+
+}
+
+.div-par{
+    width: auto;
+    height: auto;
+    /* debug */
+
+}
+/* stile del paragrafo */
+.div-par p{
+    font-size: 19px;
+}
+
+/* layout generale tabella */
+
+#table{
+    margin-top: 50px;
+
+}
+
+.row{
+    margin-top: 50px;
+    /* debug */
+
+
+    
+}
+/* clearfix */
+ .row::after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+.col{
+    float: left;
+    width: calc((100% / 3) - 40px);
+    margin: 0 20px;
+    background-color: black;
+    min-height: 110px;
+    /* debug */
+    
+}
