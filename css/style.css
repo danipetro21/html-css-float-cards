@@ -3,20 +3,20 @@
 
 /* regole generali */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* regole del body */
-body{
+body {
     background-color: rgb(229, 232, 235);
     Font-family: 'Fredoka', sans-serif;
 }
 
 /* regole header */
-header{
+header {
     text-align: center;
     width: auto;
     height: 130px;
@@ -24,17 +24,18 @@ header{
     /* debug */
 
 }
-/* stile del titolo */
-header h1{
 
-   font-size: 45px;
-   color: rgb(249, 38, 38);
-   padding-top: 30px;
+/* stile del titolo */
+header h1 {
+
+    font-size: 45px;
+    color: rgb(249, 38, 38);
+    padding-top: 30px;
 }
 
 /* stile del main */
 
-main{
+main {
     margin: 0 auto;
     width: 70%;
     height: 500px;
@@ -44,44 +45,88 @@ main{
 
 }
 
-.div-par{
+.div-par {
     width: auto;
     height: auto;
     /* debug */
 
 }
+
 /* stile del paragrafo */
-.div-par p{
+.div-par p {
     font-size: 19px;
 }
 
 /* layout generale tabella */
 
-#table{
+#table {
     margin-top: 50px;
 
 }
 
-.row{
+.row {
     margin-top: 50px;
     /* debug */
 
 
-    
+
 }
+
 /* clearfix */
- .row::after{
+.row::after {
     content: "";
     display: table;
     clear: both;
-} 
+}
 
-.col{
+.col {
     float: left;
     width: calc((100% / 3) - 40px);
     margin: 0 20px;
     background-color: black;
-    min-height: 110px;
+    height: 110px;
+
     /* debug */
-    
+
 }
+
+
+/* stile generale dell'imagine */
+.img {
+    float: left;
+    width: 110px;
+    margin-right: 15px;
+}
+
+.img img {
+    width: 110px;
+}
+
+/* stile del frame info */
+.info {
+
+    padding: 20px;
+    text-align: left;
+    line-height: 27PX;
+}
+
+.info h2 {
+    color: white;
+}
+
+.info h3 {
+    color: white;
+}
+
+.info h5 {
+    color: rgba(111, 55, 232, 0.986);
+}
+
+
+/*responsive per le info*/
+@media (max-width:1800px) {
+    
+    .info{
+        visibility: hidden;
+    }
+  }
