@@ -121,6 +121,9 @@ main {
 .info h5 {
     color: rgba(111, 55, 232, 0.986);
 }
+.info h5:hover{
+    color: red;
+}
 
 
 /*responsive per le info*/
