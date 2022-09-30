@@ -86,9 +86,15 @@ main {
     background-color: black;
     height: 110px;
     box-shadow: 10px 10px 8px #888888;
-
+    overflow: hidden;
     /* debug */
 
+}
+
+col::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -127,10 +133,10 @@ main {
 }
 
 
-/*responsive per le info*/
+/* responsive per le info
 @media (max-width:1800px) {
     
     .info{
         visibility: hidden;
     }
-  }
+  } */
